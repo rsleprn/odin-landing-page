@@ -17,10 +17,11 @@ a {
 }
 
 button {
-    padding: 8px 16px;
+    padding: 12px 24px;
     border-radius: 50px;
     border: none;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .primary {
@@ -42,6 +43,7 @@ header {
     justify-content: space-between;
     width: 80%;
     padding: 32px;
+    border-bottom: 1px dotted #e5e7eb;
 }
 
 .logo {
@@ -81,7 +83,9 @@ h1 {
     flex: 1;
 }
 
-.info {
+.info,
+.quote,
+.cta {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -117,4 +121,66 @@ h2 {
 
 .box-text {
     text-align: center;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+blockquote {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #1f2937;
+    font-style: italic;
+}
+
+.quote-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.quote-author {
+    align-self: flex-end;
+}
+
+.cta {
+    background-color: #f9faf8;
+}
+
+.cta-box {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    border-radius: 16px;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.white-border {
+    border: 2px solid #f9faf8;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
 }
